@@ -1,11 +1,11 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,7 +22,44 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+} */
+
+div#analysis{
+  background-color: aquamarine;
+  grid-row-start: 1;
+  grid-row-end: 2;
+ 
 }
+#rating{
+  /* grid-column-start:1 ;
+  grid-column-end: 2; */
+  background-color: #61dafb;
+}
+
+
+div#reviews{
+  background-color:bisque;
+  
+}
+
+div#sidebar{
+  background-color:antiquewhite;
+  color: #282c34;
+  grid-row-start: 1 ;
+  grid-row-end: 5;
+  padding: 100px;
+
+
+}
+
+div#visitors{
+  background-color:darkgray;
+  grid-row:2/4;
+  grid-column:2/5;
+  padding-right:100px;
+
+}
+
 
 .App-link {
   color: #61dafb;
@@ -36,3 +73,15 @@
     transform: rotate(360deg);
   }
 }
+
+.App{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  text-align: center;
+  grid-gap:2em;
+  height: 90vh;
+  width: 100%;
+}
+
+
